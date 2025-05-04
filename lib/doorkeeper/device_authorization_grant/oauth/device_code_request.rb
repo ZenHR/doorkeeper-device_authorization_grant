@@ -55,7 +55,7 @@ module Doorkeeper
         def generate_access_token_with_empty_custom_attributes
           find_or_create_access_token(
             device_grant.application,
-            device_grant.resource_owner_id,
+            device_grant,
             device_grant.scopes,
             {},
             server
@@ -65,7 +65,7 @@ module Doorkeeper
         def generate_access_token_without_custom_attributes
           find_or_create_access_token(
             device_grant.application,
-            device_grant.resource_owner_id,
+            device_grant,
             device_grant.scopes,
             server
           )
