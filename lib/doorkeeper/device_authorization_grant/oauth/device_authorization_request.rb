@@ -18,7 +18,7 @@ module Doorkeeper
         # @param client
         # @param host_name [String]
         # @param parameters [Hash]
-        def initialize(server, client, host_name, parameters = {}) # rubocop:disable Style/OptionHash
+        def initialize(server, client, host_name, parameters = {})
           super()
           @server = server
           @client = client
