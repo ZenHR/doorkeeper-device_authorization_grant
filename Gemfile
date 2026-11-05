@@ -9,5 +9,6 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
+gem 'json', '< 3'
 gem 'rails', '~> 8.0.0'
 gem 'sprockets-rails', '~> 3.0'
