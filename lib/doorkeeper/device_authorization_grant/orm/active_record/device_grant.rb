@@ -7,7 +7,7 @@ module Doorkeeper
     class DeviceGrant < ActiveRecord::Base # rubocop:disable Rails/ApplicationRecord Doorkeeper models inherit from ActiveRecord::Base.
       include DeviceGrantMixin
 
-      belongs_to :resource_owner, polymorphic: -> { polymorphic_resource_owner? }
+      belongs_to :resource_owner, polymorphic: -> { polymorphic_resource_owner? }, optional: true
 
       # @!attribute application_id
       #   @return [Integer]
